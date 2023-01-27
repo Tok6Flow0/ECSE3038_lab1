@@ -11,11 +11,11 @@ def potential_divider(voltage, resistor_values):
         for j in resistor_values:
             #assigning values to empty array using append operation in python
             divided_voltage.append(j * voltage / total_resistance)
-            divided_voltage.append("V")
+            print((j * voltage / total_resistance), "V")
         return divided_voltage
 
-result = potential_divider(5, [100,330])
 
-print(result)
+result = potential_divider(5, [100,330])
+print(result, "<-- Raw result in array format")
 
         
