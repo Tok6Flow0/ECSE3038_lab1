@@ -11,11 +11,12 @@ def potential_divider(voltage, resistor_values):
         for j in resistor_values:
             #assigning values to empty array using append operation in python
             divided_voltage.append(j * voltage / total_resistance)
-            print((j * voltage / total_resistance), "V")
+            print("%.2f" % (j * voltage / total_resistance), "V")
         return divided_voltage
 
-
-result = potential_divider(5, [100,330])
+#-- An example on how to enter 2 resistor values below and a volatage. Using : 9V , 3kΩ, 1kΩ.
+result = potential_divider(9, [3000,1000])
+#--
 print(result, "<-- Raw result in array format")
 
         
