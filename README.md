@@ -21,11 +21,31 @@ Ttakes two values as argument, a number that represents a voltage supply value a
 
 
 Explanation:
-The function determines whether the list has fewer than two items and provides an error message if it does, because a potential divider circuit requires at least two resistors. If there are two or more resistors, the function employs a for loop to compute the overall resistance of the circuit by adding the resistance values. The voltage drop across each resistor is then calculated using the formula Voltage drop across each resistor = Resistor value * voltage supply value / total resistance. It then gives a list of voltage drops across each resistor.
+The function determines whether the list has fewer than two items and provides an error message if it does.
+
+If there are two or more resistors, the function employs a for loop to compute the overall resistance of the circuit by adding the resistance values. 
+total_resistance = 0
+        for i in resistor_values:
+            total_resistance += i
+
+The voltage drop across each resistor is then calculated using the formula Voltage drop across each resistor = Resistor value * voltage supply value / total resistance. 
+print((j * voltage / total_resistance), "V")
+
+It then gives a list of voltage drops across each resistor.
+The function displays both the raw result and the result as requested.
 
 # Question 3
 Purpose:
 This function accepts a single number, a patient's body temperature, and a single character, the unit of temperature.
 
 Explanation:
-It first determines whether the temperature unit is 'C,' and if the temperature is less than 35 degrees Celsius, it is hypothermic; if the temperature is greater than 38 degrees Celsius, it is hyperthermic; and if the temperature is between 35 and 38 degrees Celsius, it is normal. If the temperature unit is 'F,' and the temperature is less than 95 degrees Fahrenheit, it is hypothermic; if the temperature is greater than 100.4 degrees Fahrenheit, it is hyperthermic; and if the temperature is between 95 and 100.4 degrees Fahrenheit, it is normal. If the temperature unit is not 'C' or 'F,' an error notice will be printed. It displays the proper message on the screen.
+It first determines whether the temperature unit is 'C,' and if the temperature is less than 35 degrees Celsius, it is hypothermic; 
+if temperature < 35 and temperature != 0:
+            print("the patient is hypothermic")
+
+if the temperature is greater than 38 degrees Celsius, it is hyperthermic; and if the temperature is between 35 and 38 degrees Celsius, it is normal. 
+
+If the temperature unit is 'F,' and the temperature is less than 95 degrees Fahrenheit, it is hypothermic; if the temperature is greater than 104 degrees Fahrenheit, it is hyperthermic; and if the temperature is between 95 and 104 degrees Fahrenheit, it is normal. 
+
+If the temperature unit is not 'C' or 'F,' an error notice will be printed. 
+It displays the proper message on the screen.
