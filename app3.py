@@ -1,6 +1,6 @@
 def temperature_check(temperature, unit):
     if unit == 'C':
-        if temperature < 35:
+        if temperature < 35 and temperature != 0:
             print("the patient is hypothermic")
         elif temperature > 38:
             print("the patient is hyperthermic")
@@ -9,7 +9,7 @@ def temperature_check(temperature, unit):
         else:
             print("The patient's temperature is normal")
     elif unit == 'F':
-        if temperature < 95:
+        if temperature < 95 and temperature != 32:
             print("the patient is hypothermic")
         elif temperature > 104:
             print("the patient is hyperthermic")
