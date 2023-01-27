@@ -49,3 +49,8 @@ If the temperature unit is 'F,' and the temperature is less than 95 degrees Fahr
 
 If the temperature unit is not 'C' or 'F,' an error notice will be printed. 
 It displays the proper message on the screen.
+
+
+# Kevin Hart 
+shorter?
+# Brad Williams 
